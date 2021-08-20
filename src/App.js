@@ -6,7 +6,7 @@ import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
 class App extends Component {
   state = { isSignedIn: false }
   uiConfig = {
-    signInFlow: "popup",
+    signInFlow: "redirect",
     signInOptions: [
       firebase.auth.GoogleAuthProvider.PROVIDER_ID,
       firebase.auth.FacebookAuthProvider.PROVIDER_ID,
